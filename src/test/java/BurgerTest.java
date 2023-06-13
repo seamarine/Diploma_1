@@ -98,6 +98,7 @@ public class BurgerTest {
                 burger.getReceipt().contains("Флюоресцентная булка R2-D3")
                         &&
                         burger.getReceipt().contains(ingredient)
+
         );
 
     }
