@@ -7,6 +7,7 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.*;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -98,8 +99,8 @@ public class BurgerTest {
                 burger.getReceipt().contains("Флюоресцентная булка R2-D3")
                         &&
                         burger.getReceipt().contains(ingredient)
+                );
 
-        );
 
     }
 }
