@@ -6,12 +6,12 @@ import praktikum.Bun;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class BunNameParameterizedTest {
+public class BunNameValidParameterizedTest {
     private final String name;
     private final float price;
     private final String expectedName;
 
-    public BunNameParameterizedTest(String name, float price, String expectedName) {
+    public BunNameValidParameterizedTest(String name, float price, String expectedName) {
         this.name = name;
         this.price = price;
         this.expectedName = expectedName;
