@@ -6,13 +6,13 @@ import praktikum.Bun;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
-public class BunPriceValidParameterizedTest {
+public class BunPriceParameterizedTest {
 
     private final String name;
     private final float price;
     private final float expectedPrice;
 
-    public BunPriceValidParameterizedTest(String name, float price, float expectedPrice) {
+    public BunPriceParameterizedTest(String name, float price, float expectedPrice) {
         this.name = name;
         this.price = price;
         this.expectedPrice = expectedPrice;
@@ -22,7 +22,8 @@ public class BunPriceValidParameterizedTest {
     public static Object[][] getTestData() {
         return new Object[][]{
                 {"Флюоресцентная булка R2-D312", 988, 988},
-                {"Краторная булка N-200i", 1255, 1255}
+                {"Булочка по-флотски", 12.05f, 12.05f},
+                {"Бесплатная", 0, 0}
         };
     }
 
